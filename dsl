@@ -20,5 +20,4 @@ pipeline {
             steps {
                 //sh 'touch /var/lib/jenkins/workspace/SJOB/1'           
             }            
-        }
-    }
+        }    
