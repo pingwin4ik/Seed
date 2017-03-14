@@ -2,8 +2,7 @@ pipeline {
     agent none
         stages {
         stage('Test on Pylint') {
-            agent { 
-                label 'Pylint'
+            label 'Pylint'
             }
             steps {              
                 //sh 'touch /var/lib/jenkins/workspace/SJOB/1'
@@ -16,8 +15,7 @@ pipeline {
             }                       
         }
         stage('Test on Windows') {
-            agent {
-                label 'Pylint'
+             label 'Pylint'
             }
             steps {
                 //sh 'touch /var/lib/jenkins/workspace/SJOB/1'           
