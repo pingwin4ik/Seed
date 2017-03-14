@@ -1,7 +1,9 @@
 pipeline {   
-     node ('Pylint')
-     stages {
-     stage 'Test'
+    stage 'build'
+    node{
+    checkout scm
+    sh 'mvn clean install'
+    }
      sh 'pylint *'
      }         
     stage('Build') {
