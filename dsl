@@ -5,8 +5,7 @@ pipeline {
             agent { 
                 label 'Pylint'
             }
-            steps {
-                sh 'pylint *' 
+            steps {              
                 sh 'touch 1'
             }           
         }
