@@ -1,23 +1,27 @@
 pipeline {
     agent none
-        stages {
-        stage('Test on Pylint') {
-            label 'Pylint'
+    stages {
+        stage('say hi') {
+            steps {
+                echo "I don't need no node"
             }
-            steps {              
-                //sh 'touch /var/lib/jenkins/workspace/SJOB/1'
-            } 
-            steps {              
-                sh 'touch /var/lib/jenkins/workspace/SJOB/1'
-            }  
-            steps {              
-                sh 'touch /var/lib/jenkins/workspace/SJOB/1'
-            }                       
         }
-        stage('Test on Windows') {
-             label 'Pylint'
+        stage('build') {
+             agent {
+                 label 'master'
+             }
+             steps {   
+                checkout scm
+                sh 'echo from master'
+            }
+        }
+        stage('deploy') {
+            agent {
+                label 'deploy-host'
             }
             steps {
-                //sh 'touch /var/lib/jenkins/workspace/SJOB/1'           
-            }            
-        }    
+                sh './deploy-code-here'
+            }
+        }
+    }
+}
