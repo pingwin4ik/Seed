@@ -1,5 +1,5 @@
 pipeline {
-  agent label 'Pylint'
+  agent { Pylint 'Pylint' }  
     stages {
       stage('Test') {
         steps {
