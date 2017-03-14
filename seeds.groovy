@@ -1,4 +1,4 @@
-   pipelineJob('example') {  
+   pipelineJob('Demo_2') {  
    scm {    
       git ('https://github.com/pc-hard/Seed.git')  
    }    
