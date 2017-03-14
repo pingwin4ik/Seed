@@ -6,7 +6,7 @@ pipeline {
                 label 'Pylint'
             }
             steps {              
-                sh 'touch /var/lib/jenkins/workspace/SJOB/1'
+                #sh 'touch /var/lib/jenkins/workspace/SJOB/1'
             }           
         }
         stage('Test on Windows') {
@@ -14,7 +14,7 @@ pipeline {
                 label 'Pylint'
             }
             steps {
-                sh 'touch /var/lib/jenkins/workspace/SJOB/1'           
+                #sh 'touch /var/lib/jenkins/workspace/SJOB/1'           
             }            
         }
     }
