@@ -1,10 +1,11 @@
 pipeline { 
      agent { label 'Pylint' }
     stages { 
-         stage('Test') { 
+         stage('Test') 
+         { 
              steps {
-              pylint *
-           } 
-         } 
-     } 
- }
+              pylint *            
+                   } 
+          } 
+            }
+         }
