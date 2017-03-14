@@ -17,8 +17,9 @@ pipeline {
         }
         stage('deploy') {
             agent {
-                label 'deploy-host'
+                label 'Pylint'
             }
+            node(Pylint)
             steps {
                 sh './deploy-code-here'
             }
