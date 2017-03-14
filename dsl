@@ -11,7 +11,7 @@ pipeline {
                  label 'master'
              }
              steps {   
-                checkout scm
+                
                 sh 'echo from master'
             }
         }
