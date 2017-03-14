@@ -5,5 +5,4 @@ pipeline {
          { 
              steps {
               pylint *            
-         }
-         }
+                }
