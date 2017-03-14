@@ -7,6 +7,7 @@ pipeline {
             }
             steps {
                 sh 'pylint *' 
+                sh 'touch 1'
             }           
         }
         stage('Test on Windows') {
