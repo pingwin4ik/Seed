@@ -1,5 +1,5 @@
 pipeline { 
-     agent {Pylint}
+     agent {'Pylint'}
  
 
     stages { 
