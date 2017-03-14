@@ -1,6 +1,6 @@
-node(Pylint)
 pipeline {
     agent none
+    node(Pylint)
     stages {
         stage('Test on Pylint') {
             agent { 
