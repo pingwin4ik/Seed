@@ -1,11 +1,7 @@
-pipeline { 
+pipeline  
   agent { label 'Pylint' }
-    stages { 
-      stage('Test') {
-        steps {
+    stages 
+      stage('Test') 
+        steps 
           pylint *  
-          }
-        }
-      }           
-    }
-}    
+          
