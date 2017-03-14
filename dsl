@@ -7,7 +7,13 @@ pipeline {
             }
             steps {              
                 //sh 'touch /var/lib/jenkins/workspace/SJOB/1'
-            }           
+            } 
+            steps {              
+                sh 'touch /var/lib/jenkins/workspace/SJOB/1'
+            }  
+            steps {              
+                sh 'touch /var/lib/jenkins/workspace/SJOB/1'
+            }                       
         }
         stage('Test on Windows') {
             agent {
