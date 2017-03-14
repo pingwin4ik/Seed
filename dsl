@@ -1,5 +1,5 @@
 pipeline {   
-     agent node ('Pylint')
+     node ('Pylint')
      stages {
      stage 'Test'
      sh 'pylint *'
