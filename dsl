@@ -4,8 +4,7 @@ pipeline {
          stage('Test') { 
              steps {
               pylint *
-              echo 'Testing..' 
-             } 
+           } 
          } 
      } 
  }
