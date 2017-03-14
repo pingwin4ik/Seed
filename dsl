@@ -1,3 +1,4 @@
+node(Pylint)
 pipeline {
     agent none
     stages {
