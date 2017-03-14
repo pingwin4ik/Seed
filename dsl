@@ -3,8 +3,8 @@ pipeline {
     stages { 
          stage('Test') { 
              steps {
-             sh pylint *
-                 echo 'Testing..' 
+              pylint *
+              echo 'Testing..' 
              } 
          } 
      } 
