@@ -1,20 +1,10 @@
 pipeline { 
      agent { label 'Pylint' }
-
     stages { 
-         stage('Build') { 
-             steps { 
-                 echo 'Building..' 
-             } 
-         } 
          stage('Test') { 
-             steps { 
+             steps {
+             .sh pylint *
                  echo 'Testing..' 
-             } 
-         } 
-         stage('Deploy') { 
-             steps { 
-                 echo 'Deploying....' 
              } 
          } 
      } 
