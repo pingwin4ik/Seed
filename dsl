@@ -1,7 +1,6 @@
 pipeline {
     agent none
-    node(Pylint)
-    stages {
+        stages {
         stage('Test on Pylint') {
             agent { 
                 label 'Pylint'
