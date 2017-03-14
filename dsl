@@ -4,5 +4,5 @@ pipeline {
          stage('Test') 
          { 
              steps {
-              pylint *            
-                }
+              pylint *  }
+              
