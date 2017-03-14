@@ -3,7 +3,7 @@ pipeline {
     stages {
       stage('Test') {
         steps {
-        pylint *  
+        echo 'Building..'  
         }
       }  
     }
