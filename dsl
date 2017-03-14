@@ -1,11 +1,10 @@
-pipeline {
-   node ('Pylint'){
-   stage 'Test'
-   sh 'pylint *'
-   }
-     agent any 
+pipeline {   
+     agent node ('Pylint')
      stages {
-         stage('Build') {
+     stage 'Test'
+     sh 'pylint *'
+     }         
+    stage('Build') {
             steps {
                 echo 'Building..'
              }
