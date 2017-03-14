@@ -6,7 +6,7 @@
    }    
    definition {        
      cps {            
-        script(readFileFromWorkspace('dsl'))            
+        script(readFileFromWorkspace('dsl2'))            
           sandbox()        
          }    
    }
