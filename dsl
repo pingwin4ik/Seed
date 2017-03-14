@@ -21,7 +21,7 @@ pipeline {
             }
             node(Pylint)
             steps {
-                sh './deploy-code-here'
+                sh 'ls -l'
             }
         }
     }
