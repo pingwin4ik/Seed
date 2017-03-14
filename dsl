@@ -1,26 +1,8 @@
-pipeline 
-    {
-      stage('Build') 
-          {
-             steps 
-             { 
-                sh 'pylint *'                
-                echo 'Building..'
-              }
-           }
-    
-      stage('Test') 
-          {
-             steps 
-              {
-                 echo 'Testing..'
-              }
-           }
-        stage('Deploy') 
-          {
-             steps 
-              {
-                echo 'Deploying....'
-              }
-           }
-     }
+pipeline { 
+ configure 
+  stage('Build') { 
+             steps { 
+                 echo 'Building..' 
+                    } 
+                 }
+         }
