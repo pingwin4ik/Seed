@@ -17,7 +17,7 @@ pipeline {
         }
         stage('deploy') {
             agent {
-                label 'master'
+                label 'Pylint'
             }
            
             steps {
