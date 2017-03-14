@@ -1,12 +1,12 @@
 pipeline {
     agent none
     stages {
-        stage('Test on Linux') {
+        stage('Test on Pylint') {
             agent { 
                 label 'Pylint'
             }
             steps {
-                sh 'ls -l' 
+                sh 'pylint *' 
             }           
         }
         stage('Test on Windows') {
