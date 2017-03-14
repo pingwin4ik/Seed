@@ -4,4 +4,3 @@ pipeline
       stage('Test') 
         steps 
           pylint *  
-          
