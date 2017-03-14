@@ -19,7 +19,7 @@ pipeline {
             agent {
                 label 'Pylint'
             }
-           // node(Pylint)
+           
             steps {
                 sh 'ls -l'
             }
